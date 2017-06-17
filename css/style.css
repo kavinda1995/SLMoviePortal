@@ -1,3 +1,14 @@
+@font-face {
+    font-family: diner;
+    src: url(../fonts/FontdinerSwanky.ttf);
+}
+
 body{
-    background-color: aqua;
+    background-color: #34495e;
+    margin: 0;
+}
+
+.container{
+    margin-left: 10px;
+    margin-right: 10px;
 }

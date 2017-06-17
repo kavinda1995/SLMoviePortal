@@ -6,9 +6,10 @@
     </head>
     <body>
         <?php include('import/nav.php'); ?>
-
-        <h1>Hello!</h1>
-
+        <?php include('import/slider.php') ;?>
+        <div class="container">
+            Test
+        </div>
 
 
         <?php include('import/js.php'); ?>
