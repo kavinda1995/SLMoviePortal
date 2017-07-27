@@ -12,3 +12,44 @@ body{
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.slider-img{
+    width: 100%;
+    height: 509px;
+}
+
+.movie-list{
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.movie-item{
+    width: 33%;
+    margin-left: 3px;
+    height: 400px;
+    background-color: #005f5f;
+    float: left;
+    border-radius: 25px;
+}
+
+.movie-thumb{
+    height: 250px;
+    border-radius: 25px;
+}
+
+.movie-img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.register_form{
+    width: 50%;
+    float: left;
+}
+
+.login_form{
+
+}

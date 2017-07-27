@@ -2,18 +2,19 @@
 
 <div class="slideshow-container">
     <div class="mySlides fade">
-        <img src="images/slider_banner/avengers.jpg" style="width: 100%; height: 509px;">
+<!--        set the image to display here-->
+        <img class="slider-img" src="images/slider_banner/avengers.jpg">
         <div class="text">The Avengers</div>
     </div>
 
     <div class="mySlides fade">
-        <img src="images/slider_banner/the-dark-knight.jpg" style="width:100%; height: 509px;">
+        <img class="slider-img" src="images/slider_banner/the-dark-knight.jpg">
         <div class="text">The Dark Knight</div>
     </div>
 
     <div class="mySlides fade">
-        <img src="images/slider_banner/star-wars.jpg" style="width:100%; height: 509px;">
-        <div class="text">Star Wars - The Force Awakens</div>
+        <img class="slider-img" src="images/slider_banner/revenant.jpg">
+        <div class="text">The Revenant</div>
     </div>
     </div>
     <br>
