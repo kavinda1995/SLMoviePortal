@@ -51,5 +51,14 @@ body{
 }
 
 .login_form{
+    width: 50%;
+    float: left;
+}
 
+.form_reg{
+    text-align: center;
+}
+
+.login_form{
+    text-align: center;
 }

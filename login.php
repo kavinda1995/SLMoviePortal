@@ -6,7 +6,7 @@
     <body>
         <?php include('./import/nav.php'); ?>
         <div class="register_form" style="color : whitesmoke;">
-            <form>
+            <form class="form_reg">
                 <label>Full Name</label></br>
                 <input type="text" name="fname" class="input_fill"></br></br>
                 <label>Email</label></br>
@@ -21,14 +21,21 @@
                 <input type="password" name="password" class="input_fill"></br></br>
                 <label>Confirm Password</label></br>
                 <input type="password" name="confirm_password" class="input_fill"></br></br>
+                </br>
+                </br>
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
             </form>
         </div>
         <div class="login_form" style="color : whitesmoke;">
-            <form>
+            <form class="form_login">
                 <label>Full Name</label></br>
                 <input type="text" name="fname" class="input_fill"></br></br>
                 <label>Email</label></br>
-                <input type="email" name="email" class="input_fill"></br></br>9
+                <input type="email" name="email" class="input_fill"></br></br>
+                </br>
+                </br>
+                <button type="submit">Register</button>
             </form>
         </div>
     </body>
