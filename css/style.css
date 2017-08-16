@@ -55,10 +55,10 @@ body{
     width: 30%;
     float: left;
     margin: 8px;
-    margin-left: 80px;
+    margin-left: 150px;
     background-color: #2c3e50;
     border-radius: 4px;
-    height: 90%;
+    height: 100%;
     margin-top: 20px;
     padding-bottom: 40px;
 }
@@ -72,10 +72,10 @@ body{
     width: 30%;
     float: right;
     margin: 8px;
-    margin-right: 80px;
+    margin-right: 150px;
     background-color: #2c3e50;
     border-radius: 4px;
-    height: 87%;
+    height: 97%;
     padding-top: 20px;
     padding-bottom: 40px;
 }
@@ -221,4 +221,14 @@ label {
 
 .btn2:hover{
     background-color: #005f5f;    
+}
+
+#regmsg {
+    color: green;
+
+}
+
+#existmsg {
+    color: red;
+
 }
