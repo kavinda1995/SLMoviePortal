@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+
+#outbtn {
+    background-color: #e74c3c;
+}
+
+#outbtn:hover {
+    background-color: #c0392b;
+}
+
+.wrapper {
+    text-align: center;
+    width: 650px;
+    height: 600px;
+    background-color: #3F5A75;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+} 
+
+.wrapper img {
+    padding-top: 60px;
+    width: 150px;
+    height: 150px;
+}
+
+table {
+    padding-left: 140px;
+}
+.bio {
+    font-size: 20px;
+    padding: auto;
+}
+.field {
+    text-align: justify;
+}
+.bio td {
+    width: 100px;
+    padding: 10px;
+}
+#backhome {
+    padding-top: 20px;
+}
+#backhome a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 25px;
+}
+#backhome a:hover {
+    color: #2980b9;
+    transition: .5s;
+}

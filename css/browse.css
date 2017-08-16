@@ -1,0 +1,101 @@
+.searchbar {
+	border: none;
+	border-radius: 3px;
+	margin: auto;
+	margin-top: 30px;
+	width: 80%;
+	height: 70px;
+	padding: 20px;
+	text-align: justify;
+	background-color: #2c3e50;
+}
+
+.form-input {
+
+	vertical-align: middle;
+    margin: 10px 30px;
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    border: none;	
+    border-radius: 3px;
+}
+
+.searchform label{
+	font-size: 20px;
+	font-weight: bold;
+	padding-left:15px;
+	vertical-align: middle;
+}
+
+#filmname{
+	padding-left: 40px;
+}
+#filmyear {
+	padding-left: 180px;
+}
+#filmgenre {
+	padding-left: 155px;
+}
+
+#sbtn {
+	width: 100px;
+	border-radius: 3px;
+	background-color: grey;
+}
+
+#sbtn:hover, #smallbtn:hover {
+	background-color: #005f5f;
+	transition: .3s;
+}
+#smallbtn {
+	width: 50px;
+	margin-left: -20px;
+	border-radius: 3px;
+	background-color: grey;
+}
+
+.filmdata {
+	border: none;
+	border-radius: 3px;
+	margin: auto;
+	margin-top: 30px;
+	width: 80%;
+	height: 300px;
+	padding: 20px;
+	text-align: justify;
+	background-color: #2c3e50;
+	margin-bottom: 20px;
+}
+.filmpic {
+	width: 100px;
+	height: 120px;
+	margin-left: 20px;
+	margin-top: 25px;
+}
+
+.filmpic img {
+	border-radius: 5px;
+	width: 250px;
+	height: 260px;
+	margin: auto;
+}
+
+.filmdes  {
+	font-size: 18px;
+	margin-top: -150px;
+	width: 680px;
+	padding-left: 370px;
+	text-align: justify;
+}
+
+#readbtn {
+	background-color: #035481;
+	width: 100px;
+	margin-left: 0px;
+}
+
+#readbtn:hover {
+	background-color: #005f5f;
+	transition: .3s;
+}

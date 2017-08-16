@@ -28,7 +28,7 @@ body{
     width: 33%;
     margin-left: 3px;
     height: 400px;
-    background-color: #005f5f;
+    background-color: #2c3e50;
     float: left;
     border-radius: 25px;
 }
@@ -45,20 +45,110 @@ body{
     border-top-right-radius: 25px;
 }
 
-.register_form{
+/*.register_form{
     width: 50%;
     float: left;
+}*/
+
+.register_form{
+    width: 30%;
+    float: left;
+    margin: 8px;
+    margin-left: 80px;
+    background-color: #2c3e50;
+    border-radius: 4px;
+    height: 90%;
+    margin-top: 20px;
+    padding-bottom: 40px;
 }
+
+/*.login_form{
+    width: 50%;
+    float: left;
+}*/
 
 .login_form{
-    width: 50%;
-    float: left;
+    width: 30%;
+    float: right;
+    margin: 8px;
+    margin-right: 80px;
+    background-color: #2c3e50;
+    border-radius: 4px;
+    height: 87%;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
-
 .form_reg{
     text-align: center;
+    margin-top: 20px;
 }
 
 .login_form{
     text-align: center;
+    margin-top: 20px;
+}
+
+.input_fill{
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+}
+
+label {
+    font-size: 18px;
+}
+.btn {
+    width: 100px;
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+    padding: 5px;
+}
+#message {
+    font-size: 20px;
+}
+.btn-readmore {
+    width: 100px;
+    border-radius: 3px;
+    border: none;
+    height: 40px;
+    padding: 5px;
+    float: right;
+}
+
+.btn-readmore-home {
+    width: 100px;
+    border-radius: 3px;
+    border: none;
+    height: 40px;
+    padding: 5px;
+}
+
+.filmdata{
+    color: white;
+}
+
+.movie_desc{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.addmvbtn {
+    color: whitesmoke;
+    border: none;
+    padding: 20px 30px;
+    margin: auto;
+    /*margin-top: 30px;*/
+    background-color: #035481;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.addmvbtn:hover {
+
+    background-color: #005f5f;
+    color: grey;
+    transition: .3s;
 }
