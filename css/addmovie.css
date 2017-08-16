@@ -1,0 +1,160 @@
+.add-div {
+    text-align: center;
+    width: 720px;
+    height: 1100px;
+    background-color: #6C7A89;
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-top: 10px; 
+    margin-bottom: 30px;
+    border-radius: 5px;
+    float: left;
+}
+
+.add-form {
+	margin-left: -10px;
+	margin-top: 50px;
+
+}
+label{	
+	padding: 10px 20px;
+    width: 250px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+
+#addbtn {
+	margin-left: 60px;
+	margin-top: 30px;
+	background-color: #035481;
+}
+#addbtn:hover {
+	background-color: #005f5f;
+	color: black;
+	transition: .3s;
+}
+
+.btn3 {
+    border:none;
+    text-decoration: none;
+	width: 150px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.film-div #div-row p{
+	font-size: 20px;
+	text-align: center;
+}
+
+#upbtn {
+	width: 100px;
+	background-color: #0EB354;
+}
+
+#upbtn:hover {
+	background-color: #247E23;
+}
+#delbtn {
+	width: 100px;
+	background-color: #EC644B;
+}
+
+#delbtn:hover {
+    background-color: #D91E18;	
+}
+.bttns {
+    border:none;
+    text-decoration: none;
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+.film-div {
+    width: 580px;
+    background-color: #6C7A89;
+    margin: 20px auto;
+    float: right;
+    height: 1100px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px; 
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+
+}
+
+.film-div #div-row li{
+	display: inline-block;
+    list-style: none;
+
+}
+.form-input2 {
+    margin: 15px 180px;
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    border: none;
+    background-color: #D2D7D3;
+}
+
+#movgenre {
+	margin-left: 230px;
+}
+
+#addmvbtn {
+	margin: auto;
+	margin-top: 30px;
+	background-color: #035481;
+}
+#addmvbtn:hover {
+	background-color: #005f5f;
+	color: black;
+	transition: .3s;
+}
+#resetbtn {
+    background-color: #D04242;
+}
+#resetbtn:hover {
+    background-color: #D91E18;  
+}
+.film-div h2 {
+	font-size: 30px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#errormsg {
+    color: red;
+    font-size: 20px;
+    float: left;
+    margin-left: 130px;
+}
+
+#insertmsg {
+    color: green;
+    font-size: 20px;
+    float: left;
+    margin-left: 250px;
+}
+
+textarea {
+   height:120px !important;
+   width: 300px !important;
+}
+
+#div-row li a {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.inputimg {
+    padding-top: 60px;
+}
