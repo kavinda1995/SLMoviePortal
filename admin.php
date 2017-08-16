@@ -18,21 +18,21 @@ require ('db_con.php');
                     <a href="#"><h2>Movies</h2></a>
                     <p></p>
                     <br>
-                    <a href="addmovie.php"><input type="button" class="btn2" id="enter-btn" value="ENTER"></a>
+                    <a href="addmovie.php"><input type="button" class="btn2" id="enter-btn" value="MANAGE"></a>
                 </div>
                 <div class="taskbox">
                     <img src="./images/reports.png" class="task-image"><br>
                     <a href="#"><h2>Reports</h2></a>
                     <p></p>
                     <br>
-                    <a href="add-fac-admin.php"><input type="button" class="btn2" id="enter-btn" value="ENTER"></a>
+                    <a href="#"><input type="button" class="btn2" id="enter-btn" value="VIEW"></a>
                 </div>
                 <div class="taskbox">
                     <img src="./images/admin1.png" class="task-image"><br>
                     <a href="#"><h2>Profile</h2></a>
                     <p></p>
                     <br>
-                    <a href="user-profile.php"><input type="button" class="btn2" id="enter-btn" value="ENTER"></a>
+                    <a href="user-profile.php"><input type="button" class="btn2" id="enter-btn" value="VIEW"></a>
                 </div>
 
         </div>
