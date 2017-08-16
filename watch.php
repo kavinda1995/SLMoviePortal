@@ -19,7 +19,7 @@
 </head>
 <body>
 	<?php include('./import/nav.php'); ?>
-	<center><h1>Nature</h1></center>
+	<center><h1><?php echo $movie['movie_name'];?></h1></center>
 	<div align="center">
 		<?php
 			echo $movie['embed_link'];

@@ -1,5 +1,4 @@
 <?php
-	session_start();
 	require 'db_con.php';
 ?>
 
@@ -7,7 +6,7 @@
 <html>
 <head>
 	<title>Profile | StudentMate</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	
 	<?php include('./import/css.php'); ?>
     <?php include('./import/profile.php'); ?>   
     
@@ -18,31 +17,40 @@
 		    <div class='wrapper'>
 		   
 		    <img src='./images/user1.png'><br><br>
+		<?php
+			$sql = "SELECT * FROM customer WHERE username='$_SESSION[username]'";
 
-			<div class='bio'>
+			$res = mysqli_query($conn,$sql);
+
+			if($res){
+				while($row = mysqli_fetch_row($res)){
+			echo "<div class='bio'>
 				<table border=0>
 				  	<tr>
 						<td class='field'>Username : </td>
-						<td class='field'></td>
+						<td class='field'>$row[0]</td>
 					</tr>
 					<tr>
 						<td class='field'>Full Name : </td>
-						<td class='field'></td>
+						<td class='field'>$row[1]</td>
 					</tr>
 					<tr>
 						<td class='field'>Email : </td>
-						<td class='field'></td>
+						<td class='field'>$row[2]</td>
 					</tr>
 					<tr>
 						<td class='field'>Mobile No : </td>
-						<td class='field'></td>
+						<td class='field'>$row[3]</td>
 					</tr>
 					<tr>
 						<td class='field'>NIC: </td>
-						<td class='field'></td>
+						<td class='field'>$row[4]</td>
 					</tr>
 				</table>
 			</div>
-        </div>     
+        </div> ";
+    }
+}
+?>    
 </body>
 </html>

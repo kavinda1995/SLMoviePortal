@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>read more data</title>
+	<title>Read More | SLMoviePortal</title>
 
         <?php include('./import/read.php'); ?>        
 
