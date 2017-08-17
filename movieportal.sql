@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 4.6.4
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Aug 16, 2017 at 10:54 පෙ.ව.
--- Server version: 10.1.21-MariaDB
--- PHP Version: 7.1.1
+-- Host: 127.0.0.1
+-- Generation Time: Aug 17, 2017 at 03:00 AM
+-- Server version: 5.7.14
+-- PHP Version: 5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,6 +19,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `movieportal`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `acl`
+--
+
+CREATE TABLE `acl` (
+  `username` varchar(20) NOT NULL,
+  `movie_name` varchar(40) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `acl`
+--
+
+INSERT INTO `acl` (`username`, `movie_name`) VALUES
+('goiya', 'Star Wars'),
+('riti', 'Avengers'),
+('riti', 'Star Wars');
 
 -- --------------------------------------------------------
 
@@ -43,7 +63,8 @@ INSERT INTO `customer` (`username`, `name`, `email`, `contactNo`, `NIC`) VALUES
 ('goiya', 'kavinda', 'saliyadagenius@gmail.com', 3453, '12143345'),
 ('riti', 'sandali', 'sandali@gmail.com', 4564356, '941233333V'),
 ('xxx', 'xxx', 'xxx@gmail.com', 54633456, '321343'),
-('baka', 'baka', 'baka@gmail.com', 23424234, '2425254');
+('baka', 'baka', 'baka@gmail.com', 23424234, '2425254'),
+('admin', 'admin', 'admin@slmovieportal.lk', 712142329, '953423472V');
 
 -- --------------------------------------------------------
 
@@ -60,7 +81,7 @@ CREATE TABLE `movies` (
   `movie_desc` text NOT NULL,
   `movie_image` varchar(500) NOT NULL,
   `browse_image` varchar(500) NOT NULL,
-  `embed_link` varchar(300) NOT NULL
+  `embed_link` varchar(300) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -73,10 +94,10 @@ INSERT INTO `movies` (`movie_id`, `movie_name`, `movie_year`, `movie_genre`, `mo
 (12, 'Big Hero 6', 2014, 'Animation', ' Don Hall, Chris Williams', ' bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ', 'images/movie_thumb/bighero.jpg', 'images/browseimg/bighero.jpg', '<iframe width=\'480\' height=\'320\' src=\'https://www.youtube.com/embed/z3biFxZIJOQ\' frameborder=\'0\'></iframe>'),
 (11, 'Fast and Furious 8', 2017, 'Action', 'F. Gary Gray', 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ', '', '', ''),
 (13, 'Spider Man', 2002, 'Action', 'Sam Raimi', 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla  ', '', '', ''),
-(14, 'Hobbit', 2012, 'Animation', 'Peter Jackson', 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ', '', '', ''),
+(14, 'Hobbit', 2010, 'Action', 'hsehseh', 'bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla ', '', '', ''),
 (15, 'Batman', 2010, 'Action', 'xxxxxx', 'assfafafdsf', '', '', ''),
 (16, 'Superman', 2015, 'Romance', 'adfsadfsaf', 'sadafdadsfsfdSF', '', '', ''),
-(17, 'fsdafasfsa', 2344, 'Horror', 'esrtse', 'eeqeqeqeqeqweqeq', '', '', '');
+(20, 'Desert New', 2015, 'Action', 'shzedh', 'hzsrh', 'images/movie_thumb/Chrysanthemum.jpg', 'images/browseimg/Desert.jpg', NULL);
 
 -- --------------------------------------------------------
 
@@ -98,11 +119,17 @@ INSERT INTO `users` (`username`, `password`) VALUES
 ('riti', '202cb962ac59075b964b07152d234b70'),
 ('saliya', '81dc9bdb52d04dc20036dbd8313ed055'),
 ('xxx', '202cb962ac59075b964b07152d234b70'),
-('baka', '202cb962ac59075b964b07152d234b70');
+('admin', '21232f297a57a5a743894a0e4a801fc3');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `acl`
+--
+ALTER TABLE `acl`
+  ADD PRIMARY KEY (`username`,`movie_name`);
 
 --
 -- Indexes for table `customer`
@@ -130,7 +157,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `movies`
 --
 ALTER TABLE `movies`
-  MODIFY `movie_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `movie_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
