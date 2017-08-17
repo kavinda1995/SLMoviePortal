@@ -17,7 +17,7 @@ require ('db_con.php');
                 <?php
 
 
-                $query = "SELECT * FROM movies LIMIT 3";
+                $query = "SELECT * FROM movies LIMIT 9";
 
                 $req = mysqli_query($conn,$query);
 

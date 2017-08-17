@@ -44,36 +44,11 @@ echo "<div class='container'>";
             </div>
                 
             <div class='rightdiv'>
-                <div class='movtitle'>"; echo $row['movie_name']; echo "</div>
+                <div class='movtitle'>"; echo $row['movie_name'];echo " ("; echo $row['movie_year']; echo " )</div>
                 <div class='movdiv'><img src='"; echo $row['movie_image']; echo "'>"; echo "</div>
                 <div class='mvideo'>";
                     echo $row['embed_link']; echo "
                 </div>
-                    <div class='movtab'>
-                        <table border='1'>
-                            <tr>
-                                <th>Type</th>
-                                <th>Pricing</th>
-                            </tr>
-                            <tr>
-                                <td>123</td>
-                                <td>123</td>
-                            </tr>
-                            <tr>
-                                <td>123</td>
-                                <td>123</td>
-                            </tr>
-                            <tr>
-                                <td>123</td>
-                                <td>123</td>
-                            </tr>
-                            <tr>
-                                <td>123</td>
-                                <td>123</td>
-                            </tr>                                                                       
-                        </table>
-                    </div>
-                
            ";
         	}
 

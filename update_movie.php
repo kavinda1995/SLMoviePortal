@@ -78,21 +78,13 @@ $movie = mysqli_fetch_array($res);
 		<br><br>
 		<label>Short description of movie</label><br>
 		<div class='form-input'>
-		<textarea rows="5" cols="50" name='movie_desc' placeholder="<?php echo $movieDesc; ?>" class='form-input2' required="required"></textarea>
+		<textarea rows="5" cols="50" name='movie_desc' value="<?php echo $movieYear; ?>" placeholder="<?php echo $movieDesc; ?>" class='form-input2'></textarea>
 		</div>
 		<br><br><br>
-		<label style="margin-left: 80px;">Movie Image</label>
-		
-		<input type='file' name ='movie_image' id="movie_image" class="inputimg">
-		<br><br>
-		<label style="margin-left: 65px;">Browse Image</label>
-		
-		<input type='file' name ='browse_image' id="browse_image" class="inputimg">
-		<br><br>
+		</br><br><br>
 
 
 		<a href='updatemovie.php'><input type='submit' name='add' id='addmvbtn' class='btn3' value='UPDATE MOVIE'></a><br><br><br>
-		<a href='update_movie.php'><input type='button' name='reset' id='resetbtn' class='btn3' value='RESET'>
 		</a>
 	</form>
 

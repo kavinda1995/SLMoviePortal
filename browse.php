@@ -1,7 +1,7 @@
 <?php
 	require('db_con.php');
 
-	$movie_list = "SELECT * FROM movies LIMIT 3";
+	$movie_list = "SELECT * FROM movies LIMIT 10";
 
 	$res = mysqli_query($conn,$movie_list);
     

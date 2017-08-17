@@ -46,11 +46,9 @@
 							<td class='field'>NIC: </td>
 							<td class='field'>$row[4]</td>
 						</tr>
-						<tr>
-							<td><button class='profilebtn'>Update Profile</button></td>
-							<td><button class='profilebtn'>Deactivate Profile</button></td>
-						</tr>
-					</table>
+						</table>
+						<a href='update_profile.php?username=$row[0]'><button class='profilebtn'>Update Profile</button></a>
+					
 				</div>
 	        </div> ";
 	    }

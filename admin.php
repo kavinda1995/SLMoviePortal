@@ -37,7 +37,7 @@
                     <a href="#"><h2>Reports</h2></a>
                     <p></p>
                     <br>
-                    <a href="#"><input type="button" class="btn2" id="enter-btn" value="VIEW"></a>
+                    <a href="report.php"><input type="button" class="btn2" id="enter-btn" value="VIEW"></a>
                 </div>
                 <div class="taskbox">
                     <img src="./images/admin1.png" class="task-image"><br>

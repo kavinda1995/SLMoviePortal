@@ -67,6 +67,13 @@ if(!isset($_SESSION))
 		<textarea rows="5" cols="50" name='movie_desc' placeholder="Movie description" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Movie description'" class='form-input2' required="required"></textarea>
 		</div>
 		<br><br><br>
+		<br><br>
+		<br><br>
+		<label>Movie Video</label><br>
+		<div class='form-input'>
+		<input type='text' name='movie_video' placeholder="Movie Video Link" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Movie Video Link'" class='form-input2' required="required">
+		</div>
+		<br><br><br>
 		<label style="margin-left: 80px;">Movie Image</label>
 		
 		<input type='file' name ='movie_image' id="movie_image" class="inputimg">
@@ -99,8 +106,9 @@ if(!isset($_SESSION))
 			<form action='add-movie.php' method='POST'><ul id='div-row'>
 				<li><a href='#'><p>"; echo $row['movie_name']; echo "</p></a></li>
 				<div class='bttns'>
-				<li><a href='update_movie.php?mname=$mname'><input type='button' name='update' value='Update' class='btn3' id='upbtn'></a></li>
-				<li><input type='button' name='delete' value='Delete' class='btn3' id='delbtn'></li></div>
+				<li><a href='update_movie.php?mname=$mname'><input type='button' name='update' value='Update' class='btn3' id='upbtn'></a>
+				</li>
+				<li><a href='delete_movie.php?mname=$mname'><input type='button' name='delete' value='Delete' class='btn3' id='delbtn'></a></li></div>
 			</ul></form>
 		";
 		}

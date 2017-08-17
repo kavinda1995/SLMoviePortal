@@ -160,11 +160,12 @@ label {
 }
 
 .profilebtn {
+    /*text-align: center;*/
     color: whitesmoke;
     border: none;
     width : 150px;
     height: 50px;
-    margin: auto;
+    /*margin: auto;*/
     background-color: #035481;
     font-size: 16px;
     border-radius: 10px;

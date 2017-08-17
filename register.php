@@ -15,9 +15,14 @@
 		$query_run1 = mysqli_query($conn , $query1);
 
 		if (mysqli_num_rows($query_run1)>0) {
-			echo "User already exists";
+			// echo "User already exists";
+			echo "<script>
+                alert(\"User already exists\");
+                //load the movie page again
+                window.location = \"login.php\";
+            </script>";
 
-		} else {
+		}else {
 			$querycus = "INSERT INTO customer VALUES ('$username','$name','$email','$contact','$nic')";
 			$query_run2 = mysqli_query($conn , $querycus);
 			header("Location: login.php?errormsg=1&flag=1");

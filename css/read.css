@@ -26,10 +26,10 @@
 
 }
 
-.filmpic img {
+.leftdiv .filmpic img {
 	border-radius: 5px;
-	width: 200px;
-	height: 380px;
+	width: 250px !important;
+	height: 300px !important;
 
 }
 
@@ -94,9 +94,9 @@
 	height: 300px;
 }
 .mvideo {
-	float: left;
+	/*float: left;*/
 	margin-top: 30px;
-	margin-left: 40px;
+	margin-left: 250px;
 	width: 480px;
 	height: 320px;
 	border-color: black;
