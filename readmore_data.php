@@ -1,14 +1,14 @@
 <?php
 
     $mname = $_GET['mname'];
-	
+	// echo $mname;die();
 	require('db_con.php');
 		
     $movie = "SELECT * FROM movies WHERE movie_name = '$mname'";
 
 	$res = mysqli_query($conn,$movie); 
 
-    $movie = mysqli_fetch_array($res);
+    // $movie = mysqli_fetch_array($res);
 
 ?>
 <!DOCTYPE html>
@@ -36,7 +36,7 @@ echo "<div class='container'>";
             <div class='leftdiv'>
            		<div class='filmpic'>
                      <img src='"; echo $row['browse_image']; echo "'>
-                    <a href='rent.php'><input type='submit' name='read' id='rentbtn' class='btn3' class='form-input' value='RENT'></a>
+                    <a href='rent.php?mname=$mname'><input type='submit' name='read' id='rentbtn' class='btn3' class='form-input' value='RENT'></a>
                     <a href='watch.php?mname=$mname'><input type='submit' name='read' id='watchbtn' class='btn3' class='form-input' value='WATCH'></a>
                     
                 </div>

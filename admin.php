@@ -1,7 +1,19 @@
 <?php
+    require ('db_con.php');
 
-require ('db_con.php');
-
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
+    if ($_SESSION['username'] == 'admin'){
+       
+    }else{
+        echo "<script>
+                alert(\"You dont have access here.\");
+                //load the movie page again
+                window.location = \"index.php\";
+            </script>";
+    }
 ?>
 <html>
     <head>

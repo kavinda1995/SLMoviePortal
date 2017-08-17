@@ -17,7 +17,11 @@
 		$_SESSION['username'] = $username;
 		$_SESSION['logged'] = 'TRUE';
 
-		header("Location: index.php"); 
+		if ($_SESSION['username'] == 'admin'){
+			header("Location: admin.php");
+		}else{
+			header("Location: index.php");
+		} 
 	}else{
 		header("Location: login.php?error=1&flag=1"); //error is for incorrect username or password, flag is for navbar
 	}

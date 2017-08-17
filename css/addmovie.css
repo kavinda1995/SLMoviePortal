@@ -11,6 +11,21 @@
     float: left;
 }
 
+.update-div {
+    text-align: center;
+    width: 720px;
+    height: 1100px;
+    background-color: #6C7A89;
+    /*margin: 0 auto;
+    margin-left: 15px;*/
+    padding-top: 10px; 
+    /*margin-bottom: 30px;*/
+    border-radius: 5px;
+    /*float: left;*/
+    display: block;
+    margin: auto;
+}
+
 .add-form {
 	margin-left: -10px;
 	margin-top: 50px;

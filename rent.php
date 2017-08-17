@@ -1,4 +1,13 @@
+<?php
+	if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
 
+	$mname = $_GET['mname'];
+
+	$_SESSION['movie'] = $mname;
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +23,7 @@
 
 <div class="rentdiv">
 
-	<form class="rent-form">
+	<form class="rent-form" action="add-acl.php" method="POST">
 		<label>Credit Card Number</label>
 		<input type="text" name="cardno" class="rent-input">
 		<br><br><br>
